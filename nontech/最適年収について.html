@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"最適年収について","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"所得税率(所得から計算)","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"1,950,000~3,330,000 10% + 10%住民税"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"3,330,000~6,950,000 20%　+ 10%住民税"}]},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"配偶者控除","c":[{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"年収 900 万円以下，38 万"}]},{"t":"heading","d":2,"p":{"lines":[11,12]},"v":"扶養控除","c":[{"t":"list_item","d":4,"p":{"lines":[13,14]},"v":"2023 年から，海外親族の扶養は 38 万円/年がないと，控除してくれない"}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"児童手当","c":[{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"世帯主年収 960 万以下：月に 1 万円"},{"t":"list_item","d":4,"p":{"lines":[18,19]},"v":"世帯主年収 960 万から 1200 万：月に 5 千円"}]},{"t":"heading","d":2,"p":{"lines":[20,21]},"v":"基礎控除","c":[{"t":"list_item","d":4,"p":{"lines":[22,23]},"v":"2400 万円以下"}]},{"t":"heading","d":2,"p":{"lines":[24,25]},"v":"住宅ローン控除","c":[{"t":"list_item","d":4,"p":{"lines":[26,27]},"v":"3000 万以下"}]},{"t":"heading","d":2,"p":{"lines":[28,29]},"v":"公的支援","c":[{"t":"list_item","d":4,"p":{"lines":[30,31]},"v":"マイホーム購入の際に受けられる給付金","c":[{"t":"list_item","d":6,"p":{"lines":[31,32]},"v":"年収 450 万円以下：50 万円（最大給付額）"},{"t":"list_item","d":6,"p":{"lines":[32,33]},"v":"年収 700 万円：10 万円"}]},{"t":"list_item","d":4,"p":{"lines":[33,34]},"v":"高等学校等就学支援金制度：教育費負担軽減のための給付（両親の合算額）","c":[{"t":"list_item","d":6,"p":{"lines":[34,35]},"v":"年収 660 万円以下：36 万 6,600 円"},{"t":"list_item","d":6,"p":{"lines":[35,36]},"v":"年収 1030 万円以下：11 万 8,800 円"}]}]}]})</script>
+</body>
+</html>

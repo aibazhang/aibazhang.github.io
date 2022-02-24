@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"引越し注意事項","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"退去","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"立ち合いはしない"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"「国土交通省の現状回復をめぐるトラブルとガイドライン」に沿う"},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"言った言わないのを防ぐために、メール使って証拠を残す"}]},{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"交渉","c":[{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"拒否すべき項目","c":[{"t":"list_item","d":5,"p":{"lines":[12,13]},"v":"書類作成費"},{"t":"list_item","d":5,"p":{"lines":[13,14]},"v":"簡易消化器"},{"t":"list_item","d":5,"p":{"lines":[14,15]},"v":"害虫駆除費・抗菌・室内消毒"},{"t":"list_item","d":5,"p":{"lines":[15,16]},"v":"安心入居サポート"}]},{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"特に下げやすい項目","c":[{"t":"list_item","d":5,"p":{"lines":[19,20]},"v":"仲介手数料","c":[{"t":"list_item","d":7,"p":{"lines":[20,21]},"v":"宅建業法によると，原則 0.5 ヶ月まで → 最低限 0.5 ヶ月分にしてもらう","c":[{"t":"list_item","d":9,"p":{"lines":[21,22]},"v":"<a href=\"https://www.zennichi.or.jp/public/knowledge/rental/chukai/\">全日本不動産協会</a>"}]},{"t":"list_item","d":7,"p":{"lines":[22,23]},"v":"仲介手数料に共益費は含まれない"}]},{"t":"list_item","d":5,"p":{"lines":[23,24]},"v":"火災保険","c":[{"t":"list_item","d":7,"p":{"lines":[24,25]},"v":"「借家人賠償責任保険」"},{"t":"list_item","d":7,"p":{"lines":[25,26]},"v":"こちらで選ぶことに"},{"t":"list_item","d":7,"p":{"lines":[26,27]},"v":"<a href=\"https://direct.nisshinfire.co.jp/oheya/\">お部屋を借りるときの保険</a>"}]}]},{"t":"heading","d":3,"p":{"lines":[28,29]},"v":"交渉の余地がある項目（これから交渉に入る）","c":[{"t":"list_item","d":5,"p":{"lines":[30,31]},"v":"賃料・公益費","c":[{"t":"list_item","d":7,"p":{"lines":[31,32]},"v":"交渉できたら，申し込み"},{"t":"list_item","d":7,"p":{"lines":[32,33]},"v":"二択を出す：1 ヶ月家賃サービスか賃料を 3000 円安くするか"},{"t":"list_item","d":7,"p":{"lines":[33,34]},"v":"担当が判断すべきことではない"}]},{"t":"list_item","d":5,"p":{"lines":[34,35]},"v":"敷金・礼金","c":[{"t":"list_item","d":7,"p":{"lines":[35,36]},"v":"仲介業者は礼金を乗せる場合がある"}]},{"t":"list_item","d":5,"p":{"lines":[36,37]},"v":"ハウスクリーニング","c":[{"t":"list_item","d":7,"p":{"lines":[37,38]},"v":"入居時：内覧 → 綺麗だからいらない"},{"t":"list_item","d":7,"p":{"lines":[38,39]},"v":"退去時","c":[{"t":"list_item","d":9,"p":{"lines":[39,40]},"v":"特約外ししてもらおう"},{"t":"list_item","d":9,"p":{"lines":[40,41]},"v":"「国土交通省の現状回復をめぐるトラブルとガイドライン」"},{"t":"list_item","d":9,"p":{"lines":[41,42]},"v":"クリーニング代は普通家賃の中にすでに入っているでしょ"}]},{"t":"list_item","d":7,"p":{"lines":[42,43]},"v":"両方取る業者は付き合わない方が良い"}]},{"t":"list_item","d":5,"p":{"lines":[43,44]},"v":"鍵交換代","c":[{"t":"list_item","d":7,"p":{"lines":[44,45]},"v":"普通は 1-1.5 万"},{"t":"list_item","d":7,"p":{"lines":[45,46]},"v":"前の方と同じで良いと伝えとく"}]},{"t":"list_item","d":5,"p":{"lines":[46,47]},"v":"保証会社加入料","c":[{"t":"list_item","d":7,"p":{"lines":[47,48]},"v":"大体家賃の 50％〜80％ぐらい"},{"t":"list_item","d":7,"p":{"lines":[48,49]},"v":"保証会社のパンフレットを見せてもらう"}]}]}]}]})</script>
+</body>
+</html>

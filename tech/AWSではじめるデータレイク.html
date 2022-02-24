@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"AWS ではじめるデータレイク","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"データレイクの構築","c":[{"t":"heading","d":3,"p":{"lines":[4,5]},"v":"データウェアハウス","c":[{"t":"list_item","d":5,"p":{"lines":[6,7]},"v":"分析に必要な粒度を意識して、データウェアハウスの中にデータを保存する"},{"t":"list_item","d":5,"p":{"lines":[7,8]},"v":"分析の前にデータを整理し、使いやすい形に揃え、不要なデータをカットする","c":[{"t":"list_item","d":7,"p":{"lines":[8,9]},"v":"目的に合わせてデータが整理されているからこそ、データは分析可能"},{"t":"list_item","d":7,"p":{"lines":[9,10]},"v":"「目的指向」がデータウェアハウスの重要な特徴"}]},{"t":"list_item","d":5,"p":{"lines":[10,11]},"v":"一方、DWH は目的に特化したデータしか保存していないため、新しいニーズへの対応は困難"}]},{"t":"heading","d":3,"p":{"lines":[12,13]},"v":"Computating と storage の分離"},{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"データレイクを構築する際の考え方","c":[{"t":"list_item","d":5,"p":{"lines":[18,19]},"v":"「どのようなアウトプットが欲しいか」","c":[{"t":"list_item","d":7,"p":{"lines":[19,20]},"v":"データが生み出されてから意思決定をするまでにどれだけの時間を許容するか"},{"t":"list_item","d":7,"p":{"lines":[20,21]},"v":"意思決定のためにデータをどれくらいの期間使用するか"}]},{"t":"list_item","d":5,"p":{"lines":[21,22]},"v":"必要なデータソースをリストアップ","c":[{"t":"list_item","d":7,"p":{"lines":[22,23]},"v":"データをストリームで受け取る vs. ダンプしたデータを定期的に移動させるか"},{"t":"list_item","d":7,"p":{"lines":[23,24]},"v":"インプットデータをアウトプットデータに変換するために","c":[{"t":"list_item","d":9,"p":{"lines":[24,25]},"v":"どのような処理"},{"t":"list_item","d":9,"p":{"lines":[25,26]},"v":"適したツール"},{"t":"list_item","d":9,"p":{"lines":[26,27]},"v":"アーキテクチャ"}]}]},{"t":"list_item","d":5,"p":{"lines":[27,28]},"v":"データを分析する","c":[{"t":"list_item","d":7,"p":{"lines":[28,29]},"v":"データそのものを分析"},{"t":"list_item","d":7,"p":{"lines":[29,30]},"v":"得られた結果どう活用するか"},{"t":"list_item","d":7,"p":{"lines":[30,31]},"v":"他システムや利用者がどのような形で受け取るか"}]}]},{"t":"heading","d":3,"p":{"lines":[32,33]},"v":"データ収集、保存","c":[{"t":"list_item","d":5,"p":{"lines":[34,35]},"v":"データ収集","c":[{"t":"list_item","d":7,"p":{"lines":[35,36]},"v":"ファイル転送ツール AWS DataSync"},{"t":"list_item","d":7,"p":{"lines":[36,37]},"v":"ストリームデータの収集ツール Amazon KDS"},{"t":"list_item","d":7,"p":{"lines":[37,38]},"v":"データベースに関するサービス Amazon Database Migration Service","c":[{"t":"list_item","d":9,"p":{"lines":[38,39]},"v":"DB -&gt; S3"}]}]},{"t":"list_item","d":5,"p":{"lines":[39,40]},"v":"データ保存","c":[{"t":"list_item","d":7,"p":{"lines":[40,41]},"v":"基本的に S3"}]}]},{"t":"heading","d":3,"p":{"lines":[42,43]},"v":"データカタログ・ETL","c":[{"t":"list_item","d":5,"p":{"lines":[44,45]},"v":"「どのようにデータが使われるかについて考慮せずに、単純にデータを突っ込んでしまうと、 データレイクがゴミ溜め(garbage dump)になってしまう可能性が高い」"},{"t":"list_item","d":5,"p":{"lines":[45,46]},"v":"AWS Glue","c":[{"t":"list_item","d":7,"p":{"lines":[46,47]},"v":"Data Catalog","c":[{"t":"list_item","d":9,"p":{"lines":[47,48]},"v":"テーブル定義などの情報など"},{"t":"list_item","d":9,"p":{"lines":[48,49]},"v":"データベース・S3 両方管理可能"},{"t":"list_item","d":9,"p":{"lines":[49,50]},"v":"スキーマの変更管理"}]},{"t":"list_item","d":7,"p":{"lines":[50,51]},"v":"ETL"}]},{"t":"list_item","d":5,"p":{"lines":[51,52]},"v":"AWS Lake Formation","c":[{"t":"list_item","d":7,"p":{"lines":[52,53]},"v":"Glue + 権限管理部分の機能","c":[{"t":"list_item","d":9,"p":{"lines":[53,54]},"v":"GRANT 文の記法で一元管理"}]},{"t":"list_item","d":7,"p":{"lines":[54,55]},"v":"Blueprint 典型的な ETL 処理のテンプレート集"}]},{"t":"list_item","d":5,"p":{"lines":[55,56]},"v":"その他のサービス","c":[{"t":"list_item","d":7,"p":{"lines":[57,58]},"v":"Amazon Elastice Mapreduce 　大規模なデータを処理する場合"},{"t":"list_item","d":7,"p":{"lines":[58,59]},"v":"AWS Lambda データが小規模な場合"},{"t":"list_item","d":7,"p":{"lines":[59,60]},"v":"Amazon Athena SQL ベースの加工整形"}]},{"t":"list_item","d":5,"p":{"lines":[61,62]},"v":"典型的な変換処理","c":[{"t":"list_item","d":7,"p":{"lines":[62,63]},"v":"日付に関わる処理:西暦/和暦などの表の示形式の変更や、JST から UTC"},{"t":"list_item","d":7,"p":{"lines":[63,64]},"v":"不正な値の処理:Null 値や空っぽの値の変換など"},{"t":"list_item","d":7,"p":{"lines":[64,65]},"v":"文字列や値の統一:大文字小文字の統一、整数/小数の統一、表記の揺れの統一など"},{"t":"list_item","d":7,"p":{"lines":[65,66]},"v":"テーブルの結合処理:取引ログテーブルと取引先テーブルを取引先 ID で結合など"},{"t":"list_item","d":7,"p":{"lines":[66,67]},"v":"ファイルサイズの変換:大量の細かい数 KB 程度のファイルを、数百 MB のファイルに集約など"},{"t":"list_item","d":7,"p":{"lines":[67,68]},"v":"ファイルフォーマットの変換:Parquet/ORC への変換"}]}]}]}]})</script>
+</body>
+</html>

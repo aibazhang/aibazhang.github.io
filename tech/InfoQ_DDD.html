@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"InfoQ DDD","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"通用語言","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"代碼能夠完成正確的功能，但不一定能清楚表達出其所做的事情。將模型直接寫成代碼，這樣做是非常困難的"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"比起一個巨大的 UML 來說說，針對各個組建畫一個小規模的 UML 更加實用"}]},{"t":"heading","d":2,"p":{"lines":[7,8]},"v":"Model-driven design","c":[{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"任何一個負責修改代碼的人都必須學會用代碼來表達模型，並且必須參與到一定級別的 domain 討論和 domain 專家保持溝通"},{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"行為應該很自然地隸屬於一個服務，而不是被包含在領域對象中"},{"t":"list_item","d":4,"p":{"lines":[11,12]},"v":"不應該為每一個需要的操作創建一個服務，但是當一個操作凸顯為 domain 的一個重要的概念的時候，就需要為它創建一個服務了"},{"t":"list_item","d":4,"p":{"lines":[12,13]},"v":"使用 Repository 的目的是封裝所有獲取對象應用所需要的邏輯。Repo 扮演了一個全局可訪問對象的儲存地點的角色"},{"t":"list_item","d":4,"p":{"lines":[13,14]},"v":"Factory vs. Repository: Factory 關注的是對象的創建，Repository 關注的是已經存在的對象"}]},{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"保持模型的一致性","c":[{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"Adapter 可以使你將一個類的接口轉換成為客戶端能夠理解的另一個接口"}]}]})</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"お金関連：株投資","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"個別の会社かインデックス？","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"個別の会社","c":[{"t":"list_item","d":6,"p":{"lines":[5,6]},"v":"儲けるが，"},{"t":"list_item","d":6,"p":{"lines":[6,7]},"v":"先読みができない → リスクが高い"},{"t":"list_item","d":6,"p":{"lines":[7,8]},"v":"プロでない人にふさわしくない"}]},{"t":"list_item","d":4,"p":{"lines":[8,9]},"v":"インデックス","c":[{"t":"list_item","d":6,"p":{"lines":[9,10]},"v":"リスクが比較的に低い"},{"t":"list_item","d":6,"p":{"lines":[10,11]},"v":"大きな変動が少ない","c":[{"t":"list_item","d":8,"p":{"lines":[11,12]},"v":"感染症"},{"t":"list_item","d":8,"p":{"lines":[12,13]},"v":"戦争"},{"t":"list_item","d":8,"p":{"lines":[13,14]},"v":"金融危機"}]},{"t":"list_item","d":6,"p":{"lines":[14,15]},"v":"15 年以上持てば基本的儲ける（アメリカインデックスの場合）"}]},{"t":"list_item","d":4,"p":{"lines":[15,16]},"v":"初心者だから，一応インデックスにしよう"}]},{"t":"heading","d":2,"p":{"lines":[17,18]},"v":"日本インデックスかアメリカインデックス(S&amp;P500)？","c":[{"t":"list_item","d":4,"p":{"lines":[19,20]},"v":"日本","c":[{"t":"list_item","d":6,"p":{"lines":[20,21]},"v":"先読みできない"},{"t":"list_item","d":6,"p":{"lines":[21,22]},"v":"良いタイミングで買って良いタイミングで売らないと儲けらない"},{"t":"list_item","d":6,"p":{"lines":[22,23]},"v":"最近 3 年結構上がってるけど，もうちょっと長い目で見たら不安定"}]},{"t":"list_item","d":4,"p":{"lines":[23,24]},"v":"アメリカ","c":[{"t":"list_item","d":6,"p":{"lines":[24,25]},"v":"15 年を持てば基本的に 7%利回りがある"},{"t":"list_item","d":6,"p":{"lines":[25,26]},"v":"2008 年の金融危機と 2020 年のコロナ以外は大きな下落がない"}]}]},{"t":"heading","d":2,"p":{"lines":[27,28]},"v":"どこで S&amp;P500 を買うの","c":[{"t":"list_item","d":4,"p":{"lines":[29,30]},"v":"楽天証券か住信 SBI の投資信託"},{"t":"list_item","d":4,"p":{"lines":[30,31]},"v":"開設時の注意事項","c":[{"t":"list_item","d":6,"p":{"lines":[31,32]},"v":"口座種別：特定口座源泉ありで開設","c":[{"t":"list_item","d":8,"p":{"lines":[32,33]},"v":"税金の計算勝手にしてくれる"}]},{"t":"list_item","d":6,"p":{"lines":[33,34]},"v":"積立 NISA 口座も開設しておく","c":[{"t":"list_item","d":8,"p":{"lines":[34,35]},"v":"年間 40 万まで買える"},{"t":"list_item","d":8,"p":{"lines":[35,36]},"v":"利益に対しての課税 0"}]}]}]},{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"どの商品を買う？","c":[{"t":"list_item","d":4,"p":{"lines":[39,40]},"v":"よさそうなもの","c":[{"t":"list_item","d":6,"p":{"lines":[40,41]},"v":"楽天 VTI","c":[{"t":"list_item","d":8,"p":{"lines":[41,42]},"v":"S&amp;P500 + 小型株"}]},{"t":"list_item","d":6,"p":{"lines":[42,43]},"v":"eMAXIS Slim 米国株式（S&amp;P500）"},{"t":"list_item","d":6,"p":{"lines":[43,44]},"v":"iFree S&amp;P500 インデックス"}]},{"t":"list_item","d":4,"p":{"lines":[44,45]},"v":"モーニングスターで判断"}]},{"t":"heading","d":2,"p":{"lines":[46,47]},"v":"ネット証券と付き合う時の注意点","c":[{"t":"list_item","d":4,"p":{"lines":[48,49]},"v":"彼らが提供する新しいサービスは無視すること"},{"t":"list_item","d":4,"p":{"lines":[49,50]},"v":"信用取引などはしない","c":[{"t":"list_item","d":6,"p":{"lines":[50,51]},"v":"IFA とは付き合わない"},{"t":"list_item","d":6,"p":{"lines":[51,52]},"v":"アクティブ運用はしない"}]},{"t":"list_item","d":4,"p":{"lines":[52,53]},"v":"淡々と優良株・ファンドを買い続けるだけ","c":[{"t":"list_item","d":6,"p":{"lines":[53,54]},"v":"優良ファンド","c":[{"t":"list_item","d":8,"p":{"lines":[54,55]},"v":"投資信託 ↑ に記載してある"}]},{"t":"list_item","d":6,"p":{"lines":[55,56]},"v":"ETF","c":[{"t":"list_item","d":8,"p":{"lines":[56,57]},"v":"HDV，SPYD，VYM"},{"t":"list_item","d":8,"p":{"lines":[57,58]},"v":"AGG 米国債券"},{"t":"list_item","d":8,"p":{"lines":[58,59]},"v":"LQD 優良社債ファンド"}]}]}]},{"t":"heading","d":2,"p":{"lines":[60,61]},"v":"いつ買えば良い？","c":[{"t":"list_item","d":4,"p":{"lines":[62,63]},"v":"低いところか高いところか判断しつらい時","c":[{"t":"list_item","d":6,"p":{"lines":[63,64]},"v":"一気に買うと，失敗する確率が高い"},{"t":"list_item","d":6,"p":{"lines":[64,65]},"v":"積立 → ドルコスト平均法"}]}]},{"t":"heading","d":2,"p":{"lines":[66,67]},"v":"いつ売れば良い？ → 難しい","c":[{"t":"list_item","d":4,"p":{"lines":[68,69]},"v":"お金が必要になった時に","c":[{"t":"list_item","d":6,"p":{"lines":[69,70]},"v":"無理して投資しない"},{"t":"list_item","d":6,"p":{"lines":[70,71]},"v":"一生投資つもりで買う"}]},{"t":"list_item","d":4,"p":{"lines":[71,72]},"v":"なぜ投資するのかをもう一度確認","c":[{"t":"list_item","d":6,"p":{"lines":[72,73]},"v":"自分の人生の目的地確認"},{"t":"list_item","d":6,"p":{"lines":[73,74]},"v":"ギャンブルになったりしない"},{"t":"list_item","d":6,"p":{"lines":[74,75]},"v":"短期の上り下がりはどうでもよい","c":[{"t":"list_item","d":8,"p":{"lines":[75,76]},"v":"むしろ安く買えると喜ぶ"}]}]},{"t":"list_item","d":4,"p":{"lines":[76,77]},"v":"長期的に上がってくる投資先を選ぶ"},{"t":"list_item","d":4,"p":{"lines":[77,78]},"v":"暴落を想定してやること"}]}]})</script>
+</body>
+</html>
