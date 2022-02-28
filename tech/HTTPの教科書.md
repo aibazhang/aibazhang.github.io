@@ -83,3 +83,88 @@
 - Tunnel
   - 要求に応じて別の server との通信路を確立
   - SSL などによる暗号化
+
+## Ch.6 HTTP header
+
+- HTTP message header
+  - Request
+    - Message Header
+      - Request line
+      - Request header field
+      - Genral header field
+      - Entity header field
+    - Message Body
+  - Response
+    - Message Header
+      - Status line
+      - Response header field
+      - Genral header field
+      - Entity header field
+    - Message Body
+- Genral header field
+  - Cache-Control
+  - Connection
+  - Date
+  - Transfer-Encoding
+  - Update
+  - Via
+    - Proxy 経由する場合に必ず追加する必要がある
+  - Warning
+- Request header field
+  - Accpet
+    - user agent が処理できる media type
+    - 品質係数`q`で優先度をつける
+  - Accept-Charset
+  - Accept-Encoding
+  - Accept-Language
+  - Authorization
+  - Except
+  - From
+  - Host
+  - If-match
+  - If-Modified-Since
+  - If-None-Match
+  - If-Range
+  - If-Unmodified-Since
+  - Max-Forwards
+  - Proxy-Authorization
+  - Range
+  - Referer
+  - TE
+  - User-Agert
+    - Robot agent をから request する場合、e-mail を追加する場合がある
+- Response header field
+  - Accept-Ranges
+  - Age
+  - ETag
+    - ルールは特に決まっておらず、サーバによって割り当てる
+    - 強い ETag: わずかに違っても必ず値が変化する
+    - 弱い ETag: 意味上異なったリソースとして差異がある場合のみ
+  - Location
+  - Proxy-Authenticate
+    - Proxy server からの認証要求を client に伝える
+  - Retry-After
+  - Server
+    - `Server: Apache/2.2.17 (Unix)`
+  - Vary
+  - WWW-Authenticate
+- Entity header field
+  - Allow
+  - Content-Encoding
+  - Content-Language
+  - Content-Length
+  - Content-Location
+  - Content-MD5
+  - Content-Range
+  - Contet-Type
+  - Expires
+  - Last-Modified
+- Header field for Cookie
+  - Request: Set-Cookie
+    - NAME
+    - expires
+    - path
+    - domain
+    - Secure
+    - HttpOnly
+  - Response: Cookie
