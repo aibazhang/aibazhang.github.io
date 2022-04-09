@@ -47,6 +47,7 @@
 - 404 Not Found
   - Resource がない
   - 理由を明らかにしたくない場合にも利用する
+- 429 Too Many Requests
 
 ### 5xx Server Error
 
@@ -156,7 +157,8 @@
   - Content-Location
   - Content-MD5
   - Content-Range
-  - Contet-Type
+  - Content-Type
+    - `application/json`
   - Expires
   - Last-Modified
 - Header field for Cookie
@@ -168,3 +170,105 @@
     - Secure
     - HttpOnly
   - Response: Cookie
+
+## Ch.7 HTTPS
+
+- HTTP の弱点
+  - 通信が平文なので盗聴可能
+    - 通信の暗号化: + SSL(Secure Socket Layer), TLS(Transport Layer Security) 暗号化可能
+    - contents の暗号化: Web service によく用いられる
+  - 通信相手を確かめないので、なりすまし可能
+    - SSL 証明書によって相手を確かめる
+  - 完全性を証明できないので、改ざん可能
+    - hash を確かめる: MD5, SHA-1
+    - file の digital 署名を確認
+- HTTPS = HTTP + 通信の暗号化 + 証明書 + 完全性保護
+  - SSL の殻をかぶった HTTP
+  - 公開鍵暗号方式
+    - 暗号化: 公開鍵
+    - 復号: 秘密鍵
+    - 公開鍵が本物となっているかを証明: Certificate Authority
+  - HTTPS の仕組み
+    - Server からもらった Certificate messages に公開鍵証明書が含まれる
+    - 復号できるかの negotiation
+    - MAC(Message Authentication Code)で改ざんを検知
+  - SSL は遅い？
+    - 通信が遅くなる
+    - SSL は暗号化処理で計算コスト
+
+## Ch.8 Auth
+
+- BASIC
+  - 付加情報がなくても decode 可能
+  - ほぼ使われていない
+- DIGEST
+  - Server からもらった Challenge code で response code を計算する
+  - ほぼ使われていない
+- SSL Client
+  - Client 証明書を検証する
+  - 認証局を立ち上がるためコストがかかる
+- Form-base
+  - 手法
+    - user に session id を発行し、認証状態を記録する
+    - cookie などで token を user に送る
+    - session id を検証することで先のユーザかを判断
+  - ほとんどの web service に使われている
+  - 認証方法はさまざま
+
+## Ch.9 HTTP に機能を追加する
+
+- HTTP 1.1 の bottle neck
+  - 1 connection 1 request
+  - request can only be from client
+  - compression
+  - huge header low efficiency
+- Ajax (Asynchronous JavaScript + XML)
+  - JS 内部から HTTP 通信を行う
+  - web ページの一部分だけを更新する
+- Coment
+  - connection の継続時間を長くする
+  - server 側に contents の更新があった時に response を返す
+- SPDY (SPeeDY)
+  - TCP(SSL)と HTTP の間に session layer を追加
+  - 単一の TCP で複数の HTTP request を無制限に処理
+  - Request priority
+  - Header compression
+  - Server push
+  - Server hint
+    - request すべき resource を提案
+- WebSocket protocol
+  - Server と client の接続が一度確立した後、WebSocket を利用する
+  - Server push
+  - 通信量の削減
+- HTTP 2.0
+
+## Ch.11 Web への攻撃技術
+
+- 攻撃 pattern
+  - Active attack
+    - 攻撃 code を送る
+    - SQL injection / OS injection
+  - Passive attack
+    - 罠に user を誘導
+    - user の browser に仕掛けられた攻撃 code を含んだ HTTP request を送信
+- 出力値の escape の不備による脆弱性
+  - Cross-site scirpting: XSS
+  - SQL injection
+  - OS command injection
+  - HTTP header injection
+  - Mail header injection
+- 設定や設計による脆弱性
+  - Forced Browsing
+    - 公開する予定のない page が URL から閲覧可能になる
+  - Error Handling Vulnerability
+    - Error Handling から情報を漏洩
+    - 攻撃者に hint を与えてしまう
+  - Open redirect
+    - 悪意のある URL に redirect される
+- session 管理の不備による脆弱性
+  - Session hijack
+    - 攻撃者が session id を入手
+    - なりすます攻撃
+  - Corss-site request forgeries
+- その他
+  - password cracking
