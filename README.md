@@ -6,5 +6,4 @@
 
 ## Usage
 
-- Create docker image: `docker build -t nodejs-markmap .`
 - Run transfrom script: `bash md2mindmap.sh`

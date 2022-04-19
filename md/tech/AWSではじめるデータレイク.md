@@ -12,7 +12,7 @@
 
 ### Computating と storage の分離
 
-![picture 1](../images/a2450f1c4cc47388d6af04a7aa67cea594921db6dc2bbdac978d5347792c2287.png)
+![picture 1](./images/a2450f1c4cc47388d6af04a7aa67cea594921db6dc2bbdac978d5347792c2287.png)
 
 ### データレイクを構築する際の考え方
 
