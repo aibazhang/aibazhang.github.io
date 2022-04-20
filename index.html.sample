@@ -2,12 +2,14 @@
 
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>Mindmap Wiki</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <ul id="list"></ul>
+    <h1>Mindmap Wiki</h1>
+    <ol class="gradient-list" id="list"></ol>
     <script>
       let data = [HTML_FILE_LIST];
 
