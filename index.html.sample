@@ -8,25 +8,27 @@
   </head>
 
   <body>
-    <h1>Mindmap Wiki</h1>
-    <ol class="gradient-list" id="list"></ol>
-    <script>
-      let data = [HTML_FILE_LIST];
+    <div style="width: 600px; margin: 0 auto">
+      <h1>Mindmap Wiki</h1>
+      <ol class="gradient-list" id="list"></ol>
+      <script>
+        let data = [HTML_FILE_LIST];
 
-      let list = document.getElementById("list");
+        let list = document.getElementById("list");
 
-      data.forEach((item) => {
-        let li = document.createElement("li");
-        let link = document.createElement("a");
+        data.forEach((item) => {
+          let li = document.createElement("li");
+          let link = document.createElement("a");
 
-        link.setAttribute("href", `${item}`);
-        link.setAttribute("target", "_blank");
-        // ./dist/sub/hoge.md.html -> hoge
-        link.textContent = item.split("/").slice(-1)[0].split(".")[0];
+          link.setAttribute("href", `${item}`);
+          link.setAttribute("target", "_blank");
+          // ./dist/sub/hoge.md.html -> hoge
+          link.textContent = item.split("/").slice(-1)[0].split(".")[0];
 
-        li.appendChild(link);
-        list.appendChild(li);
-      });
-    </script>
+          li.appendChild(link);
+          list.appendChild(li);
+        });
+      </script>
+    </div>
   </body>
 </html>
