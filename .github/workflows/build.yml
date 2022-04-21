@@ -1,4 +1,4 @@
-name: Build Page
+name: Build Minadmap
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - "master"
     paths:
       - "md/**"
+      - "./.github/workflows/build.yml"
 
 jobs:
   build:
