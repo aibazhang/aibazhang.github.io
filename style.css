@@ -28,6 +28,19 @@ body {
   color: #1d1f20;
   font-family: "Raleway", sans-serif;
 }
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  color: #0085a1;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
 main {
   display: block;
   margin: 0 auto;
