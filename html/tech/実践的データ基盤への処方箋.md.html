@@ -16,11 +16,11 @@
   height: 100vh;
 }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/style.min.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.13.2"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.13.2/dist/index.umd.min.js"></script><script>(r => {
           setTimeout(r);
         })(() => {
   const {
@@ -32,11 +32,9 @@
   const el = toolbar.render();
   el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
   document.body.append(el);
-})</script><script>((getMarkmap, getOptions, data) => {
-        const {
-          Markmap
-        } = getMarkmap();
-        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
-      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"実践的データ基盤への処方箋","c":[{"t":"heading","d":2,"p":{"lines":[2,3]},"v":"Tips p1","c":[{"t":"list_item","d":4,"p":{"lines":[4,5]},"v":"データソースから品質を保たないと後々になると、いくら頑張っても上限はある"},{"t":"list_item","d":4,"p":{"lines":[5,6]},"v":"すぐにデータソースを修正できない場合一時的な対応策として集計時にデータクレンジングを行う"},{"t":"list_item","d":4,"p":{"lines":[6,7]},"v":"最初からすべてデータをコピーしておく（後々めんどくさくなるから。プラバシー問題はメタデータを使って解決できるかも"},{"t":"list_item","d":4,"p":{"lines":[7,8]},"v":"BI ツールだけでなく、他のツールから参照されることを前提に作られているえということが分析用 DB（DWH）を使う理由"},{"t":"list_item","d":4,"p":{"lines":[8,9]},"v":"「自社にとっての共通指標とは何か」がわからないまま、DWH を作ってしまうと、現場では使われない"},{"t":"list_item","d":4,"p":{"lines":[9,10]},"v":"データマート・ユースケースが一対一の関係にある"},{"t":"list_item","d":4,"p":{"lines":[10,11]},"v":"メタデータを管理する目的は、データの調査こすとを削減するため。データ生成者と協力しながらやる仕事"}]},{"t":"heading","d":2,"p":{"lines":[12,13]},"v":"Tips p2","c":[{"t":"list_item","d":4,"p":{"lines":[14,15]},"v":"ETL 製品を検討する際に、どのように変更を管理できるかは調査するようにしよう"},{"t":"list_item","d":4,"p":{"lines":[15,16]},"v":"個人情報を処理する際に、データ収集する時点から匿名化する"},{"t":"list_item","d":4,"p":{"lines":[16,17]},"v":"2015 年はデータレイクはオブジェクトストレージを利用するが主流。2021 年では、データレイクも分析用 DB に格納する（本当？"},{"t":"list_item","d":4,"p":{"lines":[17,18]},"v":"Operational DB vs Analytical DB"},{"t":"list_item","d":4,"p":{"lines":[18,19]},"v":"Hadoop のパーティションが多いと遅くなることや複雑な結合に弱いといった欠点がある →Redshift などが誕生"}]}]})</script>
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(markmap, jsonOptions), root);
+      })(() => window.markmap,(markmap, jsonOptions) => markmap.deriveOptions(jsonOptions),{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"実践的データ基盤への処方箋","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"Tips p1","children":[{"type":"list_item","depth":4,"payload":{"lines":[4,5]},"content":"データソースから品質を保たないと後々になると、いくら頑張っても上限はある"},{"type":"list_item","depth":4,"payload":{"lines":[5,6]},"content":"すぐにデータソースを修正できない場合一時的な対応策として集計時にデータクレンジングを行う"},{"type":"list_item","depth":4,"payload":{"lines":[6,7]},"content":"最初からすべてデータをコピーしておく（後々めんどくさくなるから。プラバシー問題はメタデータを使って解決できるかも"},{"type":"list_item","depth":4,"payload":{"lines":[7,8]},"content":"BI ツールだけでなく、他のツールから参照されることを前提に作られているえということが分析用 DB（DWH）を使う理由"},{"type":"list_item","depth":4,"payload":{"lines":[8,9]},"content":"「自社にとっての共通指標とは何か」がわからないまま、DWH を作ってしまうと、現場では使われない"},{"type":"list_item","depth":4,"payload":{"lines":[9,10]},"content":"データマート・ユースケースが一対一の関係にある"},{"type":"list_item","depth":4,"payload":{"lines":[10,11]},"content":"メタデータを管理する目的は、データの調査こすとを削減するため。データ生成者と協力しながらやる仕事"}]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"Tips p2","children":[{"type":"list_item","depth":4,"payload":{"lines":[14,15]},"content":"ETL 製品を検討する際に、どのように変更を管理できるかは調査するようにしよう"},{"type":"list_item","depth":4,"payload":{"lines":[15,16]},"content":"個人情報を処理する際に、データ収集する時点から匿名化する"},{"type":"list_item","depth":4,"payload":{"lines":[16,17]},"content":"2015 年はデータレイクはオブジェクトストレージを利用するが主流。2021 年では、データレイクも分析用 DB に格納する（本当？"},{"type":"list_item","depth":4,"payload":{"lines":[17,18]},"content":"Operational DB vs Analytical DB"},{"type":"list_item","depth":4,"payload":{"lines":[18,19]},"content":"Hadoop のパーティションが多いと遅くなることや複雑な結合に弱いといった欠点がある →Redshift などが誕生"}]}]},null)</script>
 </body>
 </html>
