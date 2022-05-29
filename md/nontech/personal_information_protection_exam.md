@@ -2,7 +2,7 @@
 
 ## Persion information protection act
 
-### Basic 1-10
+### Basis 1-10
 
 - Persion information protection act
   - Includes usability of personal information
@@ -35,7 +35,7 @@
   - creates a DB, and provides the data to another organization is
   - Government agencies are not
 
-### Basic 11-20
+### Basis 11-20
 
 - Specifiying and changing the purpose of use of personal information
   - allowed to change the original purpose with reason
@@ -86,7 +86,7 @@
   - only according to Japanese laws and regulations (not including laws of foreign countries)
   - Japanese company without company status, is not a 3rd party located outside of Japan
 - 26: Handling of personal data fransferred from the EU and UK
-  - Court, incuding the specified purpose of use
+  - Court, including the specified purpose of use
 - 27: Create records when providing data to 3rd parties
   - confirmed by the phone or orally is permitted
   - oprator is required when proveide to 3rd party located outside of Japan
@@ -101,3 +101,44 @@
   - if business operator decides don't disclose all (or only parts of them) -> must notify the person
 - 30: Correction, addition, deletion of retained personal data
   - other laws shall be applied
+  - the evaluation of the data is incorrect -> operatoer is required to correct
+- 31: Suspension of use of retained personal data
+  - necessary supervision was not done to ensure the secure management of the data -> needn't suspend use
+  - situation can be solved by suspending the use of data -> needn't delete all of the retained personal data
+- 32: Handling fees
+  - request to suspend use or provision to 3rd party -> NO handling fee
+  - Correction -> NO handling fee
+
+
+### 33-40
+
+- Anonymously process info
+  - The purpose of use of this info needn't be publicized
+  - Operators must publicize their measures
+- Personal Information Protection Commission
+  - Instructions is unecessary when certain laws are violated
+  - doesn't follow guidadnce and advice NOT equals to penalities
+- Authorized Personal Information Protection
+  - Authorized Personal Information Protection could give instructions and make recommendations
+  - can not remove a operator
+- Extraterritorial application
+  - Relocating its base to another country -> Some Act will be applied
+  - detegation is limitation
+  - PIPA could also provide guidance or advice to forerign organization
+- Personal information for certain purpose, they may be exmepted from the duties in the provisions for organizations
+  - free speech
+  - non-profit
+- Penalties
+  - employees are also subject to punishment
+- Actions to take when cases of leakage .. of personal data occurs
+  - if leakage is detected, they must endeavor to report the details of the leakage and measure to be taken to prevent reoccurrence to the PIPC
+  - Could report to Minister before PIPC
+
+## Understanding of the Numbers Use Act
+
+- Article
+  - Article 1
+    - Not about transparency in government
+  - Article 2
+    - "Process using individual numbers" is a personal information file that includes the individual number
+    - Including other code
