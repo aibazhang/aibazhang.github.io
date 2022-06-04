@@ -117,6 +117,7 @@
   - Operators must publicize their measures
 - Personal Information Protection Commission
   - Instructions is unecessary when certain laws are violated
+  - Members can not be directors plolitical parties
   - doesn't follow guidadnce and advice NOT equals to penalities
 - Authorized Personal Information Protection
   - Authorized Personal Information Protection could give instructions and make recommendations
@@ -142,3 +143,8 @@
   - Article 2
     - "Process using individual numbers" is a personal information file that includes the individual number
     - Including other code
+- Only in case when individual number has been leaked, it can be changed
+- Notification card can not certificate a sub-agent
+- In some cases, Mayor of the City can change the indiviual number
+- Specific personal information can be continued to be retained, when an employee is not currently woriking
+- National Tax Agency could make the trade name or name of the organization public on the internet
