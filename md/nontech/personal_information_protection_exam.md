@@ -148,3 +148,21 @@
 - In some cases, Mayor of the City can change the indiviual number
 - Specific personal information can be continued to be retained, when an employee is not currently woriking
 - National Tax Agency could make the trade name or name of the organization public on the internet
+- Government agency can not be subject to penalties
+
+## Threats and Contermeasures
+- Accountability: viewed, edited, deleted the data
+- Moral rights can not be transferred
+- PIA: Privacy Impact Assessment
+- STRIDE: stealing the user ID and PD..
+- MICTS
+- Detailed risk analysis: not only use the formula
+- Non-repudiation: keep access log
+- Internal control is a part of daily task
+
+## Organization and People-based Security
+- Do regular inventories
+- Internal rules: Basic Policy
+- Supervision of consignees: No need provide confidentiality of the consignment
+- Information that indetifies the individuals who submitted complaints must be protected
+
