@@ -109,7 +109,6 @@
   - request to suspend use or provision to 3rd party -> NO handling fee
   - Correction -> NO handling fee
 
-
 ### 33-40
 
 - Anonymously process info
@@ -151,6 +150,8 @@
 - Government agency can not be subject to penalties
 
 ## Threats and Contermeasures
+
+- Authenticity: claims
 - Accountability: viewed, edited, deleted the data
 - Moral rights can not be transferred
 - PIA: Privacy Impact Assessment
@@ -161,8 +162,22 @@
 - Internal control is a part of daily task
 
 ## Organization and People-based Security
-- Do regular inventories
-- Internal rules: Basic Policy
-- Supervision of consignees: No need provide confidentiality of the consignment
-- Information that indetifies the individuals who submitted complaints must be protected
 
+- Internal rules: Basic Policy
+- Supervision of consignees
+  - No need provide confidentiality of the consignment
+- Identification of personal information
+  - Backup data should be included
+- Polcies for personal information protection
+  - Do regular inventories
+  - Formulation of the personal info protection policy is NOT mandatory
+- PMS structure
+  - Audit manager -> PIP manager -> Secretariat
+- Procedures for conducting an information security audit
+  - Doc obatained from a 3rd party outside also should be inclunded in the report
+  - Home address and tel number of temporary shoud NOT be asked
+- Training
+  - Everyone (employees, temporary staff, ...)
+- complaint
+  - Information that indetifies the individuals who submitted complaints must be protected
+  - info about the complaint shoud not be disclose
