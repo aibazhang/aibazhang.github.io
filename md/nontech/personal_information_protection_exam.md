@@ -181,3 +181,22 @@
 - complaint
   - Information that indetifies the individuals who submitted complaints must be protected
   - info about the complaint shoud not be disclose
+
+## Office Security
+
+- Greeting guests should be set up outside the office
+- Backup: for usability & reliability
+- Anti-pass back function
+
+## Information System Security
+
+- IEEE 802.11b: not including high secure trasmission
+- Application Gateway will influence transmission speed
+- RSA: a type of public-key encryption
+- IPS: Intrusion Prevention System
+- Footprint: is the technique used for gathering information about computer systems and the entities they belong to
+- UTM: Unified threat management
+- RAT: Remote Access Trojan
+- DNS cache posioning
+- RADIUS: Remote Authentication Dial In User Service
+- S/MIME: Secure / Multipurpose Internet Mail Extensions
