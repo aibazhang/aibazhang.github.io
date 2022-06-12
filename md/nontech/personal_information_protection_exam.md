@@ -53,7 +53,7 @@
   - Although personal info is from the name list (legally purchased), purpose of use is required
   - Post on the entrance door for staff is not considered as "publication"
 - Acquisition of personal info in writtern doc
-  - Explaining the purpose is necessary
+  - Permission > view -> Explaining the purpose is necessary
 - Maintaining the accuracy of data
   - Newest info should be reflected
   - Not must
@@ -80,7 +80,8 @@
   - succession is not completed yet, consenct is necessary, opt-out will not be necessary
 - 24: shared user of personal data
   - "The name or title having responsibility" is not meant to the person in charge internally
-  - same-part of the purpose of use -> all
+  - "Fixed set of data"
+    - same-part of the purpose of use -> all
 - 25: 3rd located outside of Japan
   - need check foreign governments
   - only according to Japanese laws and regulations (not including laws of foreign countries)
@@ -89,7 +90,7 @@
   - Court, including the specified purpose of use
 - 27: Create records when providing data to 3rd parties
   - confirmed by the phone or orally is permitted
-  - oprator is required when proveide to 3rd party located outside of Japan
+  - operator is required when proveide to 3rd party located outside of Japan
   - needn't check prior to the 3rd party who provided the personal data
 
 ### Retained personal data
@@ -123,7 +124,7 @@
   - can not remove a operator
 - Extraterritorial application
   - Relocating its base to another country -> Some Act will be applied
-  - detegation is limitation
+  - detegating authorithy to another minister is limited to "report"
   - PIPA could also provide guidance or advice to forerign organization
 - Personal information for certain purpose, they may be exmepted from the duties in the provisions for organizations
   - free speech
@@ -142,19 +143,27 @@
   - Article 2
     - "Process using individual numbers" is a personal information file that includes the individual number
     - Including other code
-- Only in case when individual number has been leaked, it can be changed
+- Change Individual Number
+  - Only in case when individual number has been leaked, it can be changed
+  - In some cases, Mayor of the City can change the indiviual number
+- Retain
+  - Specific personal information can be continued to be retained, when an employee is not currently woriking
+- Scope of use
+  - Even obatained the consent of the individual, outside of the purpose of use is not allowed
+- Consignments about individual numbers
+  - Need receive the consent of company A
 - Notification card can not certificate a sub-agent
-- In some cases, Mayor of the City can change the indiviual number
-- Specific personal information can be continued to be retained, when an employee is not currently woriking
 - National Tax Agency could make the trade name or name of the organization public on the internet
 - Government agency can not be subject to penalties
 
 ## Threats and Contermeasures
 
-- Authenticity: claims
+- Authenticity: claims quality
 - Accountability: viewed, edited, deleted the data
 - Moral rights can not be transferred
 - PIA: Privacy Impact Assessment
+- Personal information protection policy fir external use
+  - titles and types of personal infromation databases are not
 - STRIDE: stealing the user ID and PD..
 - MICTS
 - Detailed risk analysis: not only use the formula
@@ -173,6 +182,10 @@
   - Formulation of the personal info protection policy is NOT mandatory
 - PMS structure
   - Audit manager -> PIP manager -> Secretariat
+- Risk identification
+  - clarify threats and vulnerabilities
+- PCDA
+  - Directors: reconsider corrective and preventive actions
 - Procedures for conducting an information security audit
   - Doc obatained from a 3rd party outside also should be inclunded in the report
   - Home address and tel number of temporary shoud NOT be asked
@@ -184,9 +197,14 @@
 
 ## Office Security
 
+- RAID 1
+  - write same data to multiple hard disks
 - Greeting guests should be set up outside the office
 - Backup: for usability & reliability
 - Anti-pass back function
+- Dual vs. Duplex
+  - Duplex: or
+  - Dual: and
 
 ## Information System Security
 
