@@ -30,7 +30,7 @@
   - Consignor > consignee
 - Anonymously processed information
   - all info needn't be deleted
-  - all personal information containing individual identification codes need be deleted
+  - all individual identification codes need be deleted
 - Anonymously processed information handling business operator
   - creates a DB, and provides the data to another organization is
   - Government agencies are not
@@ -81,7 +81,7 @@
 - 24: shared user of personal data
   - "The name or title having responsibility" is not meant to the person in charge internally
   - "Fixed set of data"
-    - same-part of the purpose of use -> all
+    - ~~same-part~~  of the purpose of use -> all
 - 25: 3rd located outside of Japan
   - need check foreign governments
   - only according to Japanese laws and regulations (not including laws of foreign countries)
@@ -150,6 +150,7 @@
   - Specific personal information can be continued to be retained, when an employee is not currently woriking
 - Scope of use
   - Even obatained the consent of the individual, outside of the purpose of use is not allowed
+  - For other types -> OK
 - Consignments about individual numbers
   - Need receive the consent of company A
 - Notification card can not certificate a sub-agent
