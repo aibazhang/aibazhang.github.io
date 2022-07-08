@@ -46,3 +46,30 @@
     - Central and secure data catalog across Google Cloud with metadata capture and tagging
   - Data governance foundation
     - Security compliance with access level controls along with Cloud Data Loss Prevention integration for handling sensitive data
+
+## Executing Spark on Dataproc
+
+- history
+  - ~2006 Database
+    - bring the data to the processor
+  - 2006~2010s Hadoop
+    - destibute the processing
+    - store the data with the processors
+  - 2010s~ Cloud services
+    - separate, specialize, and connect
+    - data storage services
+    - data procesing services
+    - messaging services
+- Google Cloud provides different storage options for different jobs
+  - Cloud Storage
+    - primary datastore for google cloud
+    - unstructured data
+  - cloud bigtable
+    - large amounts of sparse data
+    - HBase-compliant
+    - low latency
+    - high scalability
+  - BigQuery
+    - data warehousing
+    - storage API makes this faster than before
+    - cloud push down queries to BigQuery refactoring the job
