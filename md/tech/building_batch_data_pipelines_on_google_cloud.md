@@ -73,3 +73,15 @@
     - data warehousing
     - storage API makes this faster than before
     - cloud push down queries to BigQuery refactoring the job
+
+
+## Run batch processsing pipelines on Dataflow
+
+- Dataflow vs. Dataproc
+  - Dataflow
+    - New data processing pipelines, unfied batch and straming
+    - Auto-scaling: transform-by-transform (adaptive)
+  - Dataproc
+    - Existing Hadoop/Spark applications, machine learning/data science ecosystem large-batch jobs, preemptible VMs
+    - Auto-scaling: based on cluster utilization (reactive)
+- Apache BEAM = Batch + Stream
