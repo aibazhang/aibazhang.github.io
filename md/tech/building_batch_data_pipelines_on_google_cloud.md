@@ -85,3 +85,7 @@
     - Existing Hadoop/Spark applications, machine learning/data science ecosystem large-batch jobs, preemptible VMs
     - Auto-scaling: based on cluster utilization (reactive)
 - Apache BEAM = Batch + Stream
+
+## Manage data pipelines with Cloud Data Fusion and Cloud Composer
+
+- Data Fusion ?= Azure Data Factory
