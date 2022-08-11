@@ -2,7 +2,29 @@
 
 It's Your Life. Share it. Celebrate it. Build it. AND HAVE FUN
 
-## Tools
+## 1. A Pragmatic Phiososphy
+
+### Topic 6. You Knowledge Portfolio
+
+- Inverst regularly
+  - even if it's just a small amount
+- Diversify
+  - then more technologies you are comfortable with, the better you will be able to adjust to change
+  - feel comfortable with some new language or bit of technology -> learn another one
+  - doesn't matter whether you ever use in project or put them on you resume. -> the processing of learning will expand your thinking
+- Manage risk: don't put all your technical eggs in one basket
+- Buy low, sell high: learning an emerging technology before it becomes popular. It's hard, but payoff can be just as rewarding
+- Review and rebalance
+
+## 2. A Pragmatic Approach
+
+### Topic 9. DRY: The Evils of Duplication
+
+- DRY is more than code
+- DRY is about the duplication of knowledge
+- DRY is about expressing the same thing in two different places, possibly in two different ways 
+
+## 3. Then Basic Tools
 
 - 熟练使用 IDE，盡量不用 click 来进行操作
 - 有很多 GUI 难以做到的事情可以通过 shell 来做到
