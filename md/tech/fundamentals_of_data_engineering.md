@@ -1,0 +1,57 @@
+# Fundamentals of Data Engineering
+
+## Data Engineerng Described
+
+- Data Engineering Lifecycle
+  - Generation -> [Ingestion, Transformation, Serving, Storage] -> [Analytics, ML, Reverse ETL]
+  - Undercurrents
+    - Security
+    - Data management
+    - DataOps
+    - Data architectur
+    - Orchestration
+    - Software engineering
+- Data Engineering Skill and Activitities
+  - DE Focused on
+    - balancing the simplest and most cost-effective, best-of-breed, services that deliver value to the business
+    - create agile data architectures that evolve as new trends emerge
+  - DE dosen't do, but should have a good functioning understanding
+    - build ML model
+    - create reports or dashboards
+    - perform data analysis
+    - build KPIs
+    - develop software applications
+- Data Maturity
+  - Starting with data
+    - the company may have fuzzy, loosely defined goals or no goals
+    - DE is usually generalist
+    - jumping to ML without building a solid data fundation always get stuck
+  - Scaling with data
+    - the challenge is crating scalable data architectures
+    - DE move from generalists to specialist
+    - scaling is not only cluster nodes, storage, or technology but the data engineering team
+  - Leading with data
+    - The automated pipelines and systems created by DE allow people within the company to do self-service analystics
+    - Creting automation for the seamless intruduction and usage of new data
+    - Custom tolls -> competitive advantage
+- Skill set
+  - Busiiness Responsibilities
+    - Know how to communicate with notechnical and technical people
+    - Understand how to scope and gather business and product requirements
+    - Understand the cultural fundations of Agile, DevOps, and DataOps
+    - Control costs
+    - Learn continuously
+  - Technical Responsibilities
+    - SQL, Python, Java/Scala, bash
+    - develop proficency in secondary programming languages (Go, JavaScript, Rust)
+    - Focus on the fundamentals to understand what'not going to change
+    - pay attention to ongoing development to know where the field is going
+- Type A & B DE
+  - Type A
+    - Stands for abstraction
+    - DE lifecycle by using entirely off-the-shelf products, managed services and tools
+    - across industries and at all levels of data maturity
+  - Type B
+    - Strands for build
+    - stage 2 & 3 in maturity
+    - initial data use case is unique and mission-critical that custom data tools are required to get started
