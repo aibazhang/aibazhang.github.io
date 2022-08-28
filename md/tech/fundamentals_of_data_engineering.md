@@ -55,3 +55,101 @@
     - Strands for build
     - stage 2 & 3 in maturity
     - initial data use case is unique and mission-critical that custom data tools are required to get started
+
+
+## Design Good Data Architecture
+
+- Principle
+  - Principle 1: Choose common components wisely
+    - Like Making a Toaster
+  - Principle 2: Plan for failure
+    - availability
+    - reliability
+    - recovery time objective
+      - The maximum acceptable time for a service or system outage
+    - recovery point objective
+      - The maximum acceptable data loss
+  - Principle 3: Architect for scalability
+    - scale up
+    - scale down
+  - Principle 4: Architecture is leadership
+    - high technical competence
+    - extremely valuable
+  - Principle 5: Always be architecting
+    - collaborative and agile
+  - Principle 6: Build lossely coupled systems
+  - Principle 7: Make reversible decisions
+  - Principle 8: Prioritize security
+  - Principle 9: Enbrace FinOps
+    - cost
+
+## Choosing Technologies Across the Data Engineering Lifecycle
+
+- Team size and capabilities
+  - For samll teams or teams with weaker technical chops -> use SaaS tools
+  - stick with technologies and workflows with which the team is familiar
+- Speed to market
+  - choose tools that help you move quickly, reliably, safely, and securely
+- Interoperability
+  - Ensure seleted tech interacts and operates with other technologies
+- Cost optimization and business value
+  - opex-first approach centered on the cloud and flexible, pay-as-you-go-technologies
+  - consider total ooprtunity cost of ownership
+- Today versus the future: immutable versus transitory technologies
+  - find the immutable technologies along the data engineering
+  - build transitory tools around the immutables
+  - evaluate tools every 2 years
+- Location (cloud, on prem, hybrid cloud, multicloud)
+- Build versus buy
+- Monolith versus modular
+  - Monoliths are attractive but loss of flexbility, ooprtunity cost, and high-friction development cycles.
+- Serverless versus servers
+- Optimization, performance, and the benchmark wars
+- The undercurrents of the engineering lifecycle
+
+## Data Generation in Source System
+
+- Good diplomacy and relationships with the stakeholders of source systems are crucial
+- system stakeholder: builds and maintains the source systems
+- Data stakeholders: own and control access to the data you want
+- **Data contract**
+
+## Storage
+
+- Raw ingredients
+  - HDD
+  - SSD
+  - RAM
+  - Networking
+  - Serialization
+  - Compression
+  - CPU
+- Storage systems
+  - HDFS
+  - RDBMS
+  - Cache/memory-based storage
+    - Redis
+  - Object storage
+    - key-value store for immutable data objects
+    - don't support random writes or append operations
+    - work well for a low rate of update operations, where each operation updates a large volume of data
+  - Streaming storage
+- Storage abstractions
+  - Data lake
+  - Data lakehouse
+    - Key advantage: interoperability
+    - various tools can connect to the metadata layer and read data directly from object storage
+  - Data platform
+  - Cloud data warehouse
+- Big idead and Trends in Storage
+  - Data Catalog
+    - Centralized metadata store for all data across an organization
+  - Data Sharing
+  - Schema
+    - Schema on write
+      - enforces data standards, making data easier to consume and utilize in the future
+    - Schema on reading
+      - emphasizes flexibility, allowing virtually any data to be written
+  - Separation of Compute from Storage
+  - Data Storage Lifecycle and Data Retention
+  - Single-Tenant Versus Multitenant Storage
