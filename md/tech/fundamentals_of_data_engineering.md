@@ -153,3 +153,74 @@
   - Separation of Compute from Storage
   - Data Storage Lifecycle and Data Retention
   - Single-Tenant Versus Multitenant Storage
+
+
+## Ingestion
+
+- Key engineering considerations for the ingestion phase
+  - Bounded Versus Unbounded Data
+  - Frequency
+    - Batch -> Micro-batch -> Real-time
+  - Synchronous Versus Asynchronous Ingestion
+  - Serialization and Deserialization
+    - serialization: encoding the data from a source and preparing data structures for transmission and intermediate storage stages
+  - Throughput and Scalability
+  - Reliability and Durability
+  - Payload
+    - Kind
+    - Shape
+    - Size
+    - Schema and data types
+    - Detecting and handling upstream and downstream schema changes
+      - even has ingestion tools to automate the detection of schema changes
+      - scheme changes still break pipelines downstream
+      - communication between those making schema chagnes is important
+    - Schema registries
+      - track schema versions and history
+  - Metadata
+  - Push Versus Pull Versus Patterns
+- Batch Ingestion Considerations
+  - Snapshot or differential extraction
+    - Snapshot: extremely common because of their simplicity
+    - Differential updates: minizing network traffic and target storage usage
+  - File-based export and ingestion
+    - Preparation work is done on the source system side
+    - because of security reasons
+  - ETL versus ELT
+  - Inserts, update, and batch size
+    - Consider the balance of insert rate and your database
+  - Data migration
+    - Biggest challenges: movement of data pipeline connections from the old system to the new one
+- Message and Stream Ingestion Considerations
+  - Schema evolution
+  - Late-arriving data
+  - ordering and multiple delivery
+  - Replay
+  - Time to live
+  - Message size
+  - Error handling and dead-letter queues
+  - Consumer PUll and Push
+  - Location
+- Ways to ingest data
+  - Direct Database Connection
+    - ODBC/JDBC
+    - Source database <-JSBC- Ingestion process -> Object store
+  - Change Data Capture
+    - Batch-oriented CDC
+    - Continuous CDC
+    - CDC and database replication
+  - APIs
+  - Message Queues and event-streaming platforms
+  - Managed Data Connectors
+  - Moving data with object storage
+  - EDI (electornic data interchange)
+    - e.g. A cloud-based email server that saves files onto company object storage as soon as they are received
+  - Databases and file export
+  - Parctical issues with commone file formats
+  - Shell
+    - AWS CLI
+    - gcloud
+  - Webhook
+  - Web Interface
+  - Web Scraping
+  - Data Sharing
