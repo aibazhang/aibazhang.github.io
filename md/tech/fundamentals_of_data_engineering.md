@@ -224,3 +224,44 @@
   - Web Interface
   - Web Scraping
   - Data Sharing
+
+
+## Queries, Modeling, and Transformation
+
+- Queries
+  - the life of a query
+    - SQL query issued
+    - parsing and conversion to bytecode
+    - query planning and optimization
+    - query execution
+    - results returned
+  - improving query performance
+    - optimize your join strategy and schema
+    - use the `EXPLAIN` and understand your query's performance
+    - avoid full table scans
+    - know how your database handles commits
+      - PostgreSQL
+        - ACID transactions
+        - row locking
+      - BigQuery
+        - allows only one write operation at a time
+      - MongoDB
+        - ultra-high write performance
+        - suitable for applications the can stand to lose some data
+        - not a great fir applications that need to capture exact data and statistics
+      - vacuum dead records
+      - leverage cached query results
+  - queries on streaming data
+- Data Modeling
+  - A data model represents the way data relates to the real world
+  - Normalization
+    - Denormalized -> 1NF -> 2NF -> 3NF
+    - Techniques for modeling batch analytical data
+      - Inmon
+        - 3NF
+        - Source systems -ETL-> DWH -ETL-> Data marts
+      - Kimball
+        - star schema
+      - Data Vault
+        - Satellite 1 -> Hub1 -> Link <- Hub 2 <- Statellite 2
+- Transformation
