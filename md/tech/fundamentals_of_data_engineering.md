@@ -265,3 +265,33 @@
       - Data Vault
         - Satellite 1 -> Hub1 -> Link <- Hub 2 <- Statellite 2
 - Transformation
+  - Why
+    - manipulate, enhance, and save data for downstream use
+    - increasing its value in a scalable, reliable, and cost-effective manner
+    - multiple tables and datasets -> multiple systems
+  - Batch Transformations
+    - ETL, ELT, Data pipelines
+      - ✅ apply the proper technique on a case-by-case basis as they build data pipelines
+      - ❎ standarize on ETL or ELT
+    - When to avoid SQL for batch transformations in Spark
+      - complex process: procedural programming language is a better fit here
+      - word-stemming query will be neither readable nor maintainable
+      - resuable libraries are easy to create in Spark
+      - Recycle SQL
+        - reuse the results of a SQL query by commiting to a table or creating a view (Airflow)
+        - reuse of SQL statements (dbt)
+    - Optimizing Spark and other procesing frameworks
+      - ❎ Python UDFs
+      - ✅ Spark-native way to accomplish
+        - If you must use UDFs, rewriting them in Scala or Java
+      - consider intermixing SQL
+    - Update pattern
+      - CDC
+    - Schema updates
+      - columns-oriented DB: updating the schema is easier
+      - semistructured data
+        - frequently accessed data in the JSON field can be added directly into the schema over time.
+    - After MapReduce
+      - leveraging memory for transformations will continue to yield gains for the foreseeable future
+  - Materialized Views, Federation, and Query Virtualization
+  - Streaming Transformations and Processing
