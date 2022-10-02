@@ -294,4 +294,46 @@
     - After MapReduce
       - leveraging memory for transformations will continue to yield gains for the foreseeable future
   - Materialized Views, Federation, and Query Virtualization
+    - Materialized Views
+      - does some or all of the view computation in advance
+    - Federated queries
+      - allows an OLAP database to select from an external data source
+      - some OLAP systems can convert federated queries into materialized views
   - Streaming Transformations and Processing
+
+## Serving Data for Analytics, Machine Learning, and Reverse ETL
+
+- General Considerations for Serving Data
+  - A loss of trust is often a silent death kenll for a data project
+  - before you get started
+    - Who will use the data, and how will they use it?
+    - What do stakeholders expect?
+    - How can I collaborate with data stakeholders to understand how the data I'm working with will be used?
+- Analytics
+  - Business Analytics
+    - dashboard
+    - report
+    - ad hoc analysis
+      - impactful -> end up in a report or dashboard
+  - Operational Analytics
+    - real-time updates
+    - e.x. monitoring dashboards
+  - Enbedded Analytics
+    - end-user-facing dashboards
+- ML
+  - File Exchange
+    - Object storage is useful
+  - Database
+  - Streaming Systems
+  - Query Federation
+    - must ensure that the federated queries won't consume excessive resources in the source
+  - Data Sharing
+    - allowing compaines to share data safely nad securely with each other
+  - Semantic and Metrics Layers
+    - Metrics Layers: a tool for maintaining and computing business logic
+      - live BI tool
+      - or software that builds transformation queries
+      - e.x. Looker and dbt
+  - Serving Data in Notebooks
+    - DE play a key role in facilitating the move to scalable cloud infrastructure
+- Reverse ETL
