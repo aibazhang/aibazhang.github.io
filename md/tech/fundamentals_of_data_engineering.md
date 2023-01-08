@@ -2,25 +2,41 @@
 
 ## Data Engineerng Described
 
-- Data Engineering Lifecycle
-  - Generation -> [Ingestion, Transformation, Serving, Storage] -> [Analytics, ML, Reverse ETL]
-  - Undercurrents
+### What is Data Engineering
+
+- Definition
+  - Development, implementation, and maintenance of systems and processes
+    - take in raw data and produce high-quality, consistent information that supports downstream use case
+      - downstream use case
+        - analysis
+        - machine learning
+  - Intersection of
     - Security
     - Data management
     - DataOps
-    - Data architectur
+    - Data architecture
     - Orchestration
     - Software engineering
-- Data Engineering Skill and Activitities
-  - DE Focused on
-    - balancing the simplest and most cost-effective, best-of-breed, services that deliver value to the business
-    - create agile data architectures that evolve as new trends emerge
-  - DE dosen't do, but should have a good functioning understanding
-    - build ML model
-    - create reports or dashboards
-    - perform data analysis
-    - build KPIs
-    - develop software applications
+  - Data Engineer: manages the data engineering lifecycle
+    - begining: get data from source systems
+    - ending: serving data for use cases (analysis, ML)
+- [Data Engineering Lifecycle](https://www.oreilly.com/api/v2/epubs/9781098108298/files/assets/fode_0201.png)
+  - Generation -> [Ingestion, Transformation, Serving, Storage] -> [Analytics, ML, Reverse ETL]
+- Data Engineering and Data Science
+  - [The data science hierarchy of needs](https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007)
+  - Data from various sources -> Data Engineering -> Data Science and analytics
+
+### Data Engineering Skill and Activitities
+
+- Must have
+  - balancing the simplest and most cost-effective, best-of-breed services that deliver value to the business
+  - create **agile data architectures** that evolve as new trends emerge
+- Dosen't do, but should have a good functioning understanding
+  - build ML model
+  - create reports or dashboards
+  - perform data analysis
+  - build KPIs
+  - develop software applications
 - Data Maturity
   - Starting with data
     - the company may have fuzzy, loosely defined goals or no goals
@@ -34,7 +50,7 @@
     - The automated pipelines and systems created by DE allow people within the company to do self-service analystics
     - Creting automation for the seamless intruduction and usage of new data
     - Custom tolls -> competitive advantage
-- Skill set
+- Skills
   - Busiiness Responsibilities
     - Know how to communicate with notechnical and technical people
     - Understand how to scope and gather business and product requirements
@@ -43,10 +59,13 @@
     - Learn continuously
   - Technical Responsibilities
     - SQL, Python, Java/Scala, bash
-    - develop proficency in secondary programming languages (Go, JavaScript, Rust)
-    - Focus on the fundamentals to understand what'not going to change
-    - pay attention to ongoing development to know where the field is going
-- Type A & B DE
+    - Develop proficiency in secondary programming languages (Go, JavaScript, Rust)
+    - Keeping pace in a fast-moving field
+      - "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road." ― Stewart Brand.
+      - Focus on the fundamentals to understand what'not going to change
+      - Pay attention to ongoing development to know where the field is going
+      - Understand how new technoligie will be helpful in the lifescyle
+- Data Engineering Roles
   - Type A
     - Stands for abstraction
     - DE lifecycle by using entirely off-the-shelf products, managed services and tools
@@ -56,6 +75,18 @@
     - stage 2 & 3 in maturity
     - initial data use case is unique and mission-critical that custom data tools are required to get started
 
+### Data Engineers inside an organization
+
+- Internal-Facing vs. External-Facing Data Engineers
+- Data Engineers and other technical roles
+  - Upstream stakeholders
+    - Software engineers
+    - Data atchitects
+    - DevOps and SREs
+  - Downstream
+    - Data analysts
+    - Data Scientists
+    - Machine laerning engineers and AI researchers
 
 ## Design Good Data Architecture
 
