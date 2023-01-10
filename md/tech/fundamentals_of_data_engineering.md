@@ -46,10 +46,11 @@
     - the challenge is crating scalable data architectures
     - DE move from generalists to specialist
     - scaling is not only cluster nodes, storage, or technology but the data engineering team
+    - communcate with other tetams about the practical utility of data
   - Leading with data
     - The automated pipelines and systems created by DE allow people within the company to do self-service analystics
-    - Creting automation for the seamless intruduction and usage of new data
-    - Custom tolls -> competitive advantage
+    - Creating automation for the seamless intruduction and usage of new data
+    - Custom tools -> competitive advantage
 - Skills
   - Busiiness Responsibilities
     - Know how to communicate with notechnical and technical people
@@ -77,16 +78,34 @@
 
 ### Data Engineers inside an organization
 
-- Internal-Facing vs. External-Facing Data Engineers
 - Data Engineers and other technical roles
   - Upstream stakeholders
     - Software engineers
-    - Data atchitects
+      - understand the application that generate data
+      - volume
+      - frequency
+      - format
+    - Data architects
+      - a good understanding of architecture best pratices and approches
     - DevOps and SREs
+      - operational monitoring
+      - may also be downstream
   - Downstream
-    - Data analysts
+    - Data analysts (or business analyst)
+      - build pipelines for new data sources required by the business
     - Data Scientists
-    - Machine laerning engineers and AI researchers
+      - provide the data automation and scale
+      - -> make data science more efficient
+    - ML engineers and AI researchers
+      - the boundaries between ML engineering, data engineering and data science are blurry
+- Data Engineers and Business Leadership
+  - CTO
+    - data engineers often report directly through a CTO
+  - CDO
+    - CDO manage business analytics and data engineering
+- Data Engineers and project managers
+  - Data Engineers often work on intiatives (spanning many years)
+  - projects managers balancing the cadence of technology and teams againsst the needs of the business
 
 ## Design Good Data Architecture
 
