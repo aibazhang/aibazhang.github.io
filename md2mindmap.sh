@@ -9,7 +9,7 @@ do
   node_modules/.bin/markmap $file -o $output_file.html --no-open #tr
 done
 
-find ./html -type f -name "*.html" ! -name "index.html" | \
+find ./html -type f -name "*.html" ! -name "index.html" | sort | \
   awk '{print "\""$0"\","}' | \
   xargs -0 -I{} awk -v list={} '{sub(/HTML_FILE_LIST/, list); print}' \
   index.html.sample > index.html

@@ -63,3 +63,52 @@
   - Likely to rise in popularity in the coming years
 
 ### Collecting Data Quanlity Metrics
+
+- Data quality metrics
+  - Is the data up-to-date?
+  - Is the data compelete?
+  - Are fields within expected ranges?
+  - Is the null rate higher or lower than it should be?
+  - Has the schema changed?
+- Using query logs
+  - Who is accessing this data?
+  - Where dose it come from upstream? Where is it going downstream?
+  - How often, on average, it this particular transformation executed?
+  - How many rows are affected?
+- Designing a data catalog
+  - Data Catelog: discovering and organizing the proper metadata that explains your date pipeline
+  - A data quality-first catalog
+    - Self-service discovery and automation
+    - Scalability as data evoloves
+    - Data lineage for distributed discovery
+
+
+## Ch03 Collecting, Cleaning, Transforming, and Testing Data
+
+### Collecting Data
+
+- Application log data
+- API Responses
+- Sensor Data
+
+### Alerting and Testing
+
+- dbt
+- Great Expectations
+- Deequ
+
+
+## Ch04 Monitoring and Anomaly Detection for Your Data Pipelines
+
+- Testing and circuit breakers can handle many of your known unknowns
+- Monitoring and anomaly detection can cover your unkown unknowns
+- Monitoring
+  - Freshness (data since last update)
+  - Distribution of metrics
+    - completeness
+    - distinctness
+    - zero rate
+    - null rate
+    - numeric (mean, min, max, std, percentile)
+
+## Ch05 Architecting for Data Reliability
