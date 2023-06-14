@@ -13,17 +13,23 @@
     - double: `echo "my home is $HOME"` my home is /home/jc
     - single: `echo 'my home is $HOME'` my home is $HOME
   - escape from alias also could use `\`
-- locatinls g programs to be run
+- locating programs to be run
   - bash `echo $PATH | tr : "\n"`
   - fish `echo $PATH | string split " "`
   - shell searches for a command by name, it checks if that name is an alias before checking the serach path
 
 ## Ch. 03 Rerunning Commands
 
-- The shell default is Emax-style
+- The shell default is Emacs-style
 
 
 ## Ch. 04 Cruising the Filesystem
 
 - Use `CDPATH` for rapid navigation
 - toggle among many directories with pushh and popd
+
+
+## Ch. 05 Expanding Your Toolbox
+
+- brace expansion `{1..10}` in fish `(seq 10)`
+  - fish's philosophy: replacing magical syntax with conrete commands
