@@ -52,6 +52,7 @@
     - Log-structured
       - SSTable
       - LSM-trees
+      - (LevelDB, AWS S3, RocksDB)
     - Update-in-place (B-tree)
       - Major RDB
       - Many nonrelational ones
