@@ -46,7 +46,8 @@
 - combining text
   - `tac` reverses the lines of each file
   - `paste` combines file side by side
-  - print diff line of two files  `diff file1 file2 | grep '^[<>]' | cut -c3`
+  - print diff line of two files  `diff file1 file2 | grep '^[<>]' | cut -c3-`
+    - remove other parts except the text
 - transforming text
   - `tr` translates one set of characters into another
     - remove spaces and tabs `echo Efficient Linux | tr -d ' \t'`
@@ -54,3 +55,34 @@
     - extract last word of each line `rev celebrities | cut -d' ' -f1 | rev`
     - do the same thing with awk `awk '{print $NF}' celebrities`
     - do the same thing with sed `sed 's/.* //g' celebrities`
+      - `.*`: match all characters up to the last space and replace them with nothing
+
+## Ch. 06 Parents, Children, and Environments
+
+- A shell is just an ordinary program like `ls` or `cat`
+- Any changes to the parent won't affect its children that already running.
+  - But can affect its future children
+- environment variables
+  - local variables: local to a single shell
+  - environment variables: copied from a given shell to all of its children
+- Launch a new shell anytime and change anything in its environment, and all the changes disappear when you exit the shell
+  - you can experiment with shell features safely
+  - run a shell manuyally
+  - creating a child
+  - terminate it
+- child shells vs. subshells
+  - child does not receive copies of the parent's aliases
+  - subshell is a complete copy of its parent
+    - command susstitutions not allowed in fish
+- configuring your environment
+  - better to use `fish_add_path` to add path in fish
+  - https://zenn.dev/estra/articles/zenn-fish-add-path-final-answer
+
+## Ch. 07 More Ways to Run a Command
+
+- #1 conditional lists
+  - `cd dir || mkdir dir && cd dir`
+- #2 uncondition lists
+  - reminder system, sleeping for 5 minutes and then sending me an email
+  - `sleep 300; echo "rember to walk the dog" | mail -s reminder $USER`
+- #3 command substitution
