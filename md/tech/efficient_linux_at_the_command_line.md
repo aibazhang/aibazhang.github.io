@@ -85,4 +85,45 @@
 - #2 uncondition lists
   - reminder system, sleeping for 5 minutes and then sending me an email
   - `sleep 300; echo "rember to walk the dog" | mail -s reminder $USER`
-- #3 command substitution
+- #3 command substitution: a command is replaced by its output
+  - move files to subdirectory with Artist: Kansas (fish)
+    - `mv (grep -l "Artist: Kansas" *.txt) kansas/`
+    - bash need the `$`
+  - set result to a variable
+    - fish `set kasasFiles (grep -l "Artist: Kansas" *.txt)`
+    - bash `kasasFiles=$(grep -l "Artist: Kansas" *.txt)`
+- #4 process substitution: a command is replaced by a file (sort of)
+  - fish `diff (ls -1 | sort -n | psub) (seq 1 1000 | sed 's/$/.jpg/' | psub)`
+  - bash `diff <(ls -1 | sort -n) <(seq 1 1000 | sed 's/$/.jpg/')`
+- #5 passing a command as an argument to bash
+  - execute some commands but not change the dir
+  - `touch /tmp/badfile`
+  - `bash -c "cd /tmp && rm badfile"`
+- #6: piping a command to bash
+  - `echo "ls -l" | bash`
+- #7 executing a string remotely with ssh
+  - `echo "ls > outfile" | ssh myhost.example.com`
+- #8 running a list of commands with xargs
+  - safety with find and xargs: `find . -type f -print0 | xargs -0 wc -l`
+    - use `-0` specify input separators
+  - ls | xargs -I XYZ echo XYZ is my favorite food
+    - `XYZ` is place holder
+- #9 backgrounding a command
+  - saving time: suspend the editor (Ctrl + Z)
+  - test your code
+  - resume the editor (`fg`)
+- #10 explicit sub shells
+
+## Ch. 08 Building a Brash One-Liner
+
+- inserting a fiename into sequence
+  - `paste (seq -w 10 -1 3 | sed 's/\(.*\)/ch\1.asciidoc/' | psub) (seq -w 11 -1 4 | sed 's/\(.*\)/ch\1.asciidoc/' | psub) | sed 's/^/mv /' | bash`
+  - copy and paste whole line
+    - `Ctrl + A`
+    - `Ctrl + K`
+    - `Ctrl + Y`
+- checking matched pairs of files
+  - `diff (ls *.jpg | sed 's/\.[^.]*$//' | psub) (ls *.txt | sed 's/\.[^.]*$//' | psub) | grep '^[<>]' \ | awk '/^</{print $2 ".jpg"} /^>/{print $2 ".txt"}'`
+- generating a CDPATH from your home directory
+  - `echo 'CDPATH=$HOME' (ls -d */ | sed -e 's@^@$HOME/@g' -e 's@/$@@') | tr ' ' ':'`
+- generating test files
