@@ -127,3 +127,10 @@
 - generating a CDPATH from your home directory
   - `echo 'CDPATH=$HOME' (ls -d */ | sed -e 's@^@$HOME/@g' -e 's@/$@@') | tr ' ' ':'`
 - generating test files
+  - `shuf -n (random) -o (pwgen -N1 10).txt /usr/share/dict/words`
+
+## Ch. 09 Leveraging Text Files
+
+- finding files
+  - `find $HOME -print > ~/.ALLFILES`
+  - add fish function `grep $argv $HOME/.ALLFILES`
