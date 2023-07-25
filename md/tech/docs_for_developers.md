@@ -62,14 +62,34 @@
 - callouts
   - warning > caution > note
 - make your content more skimmale
-  - stete your most important information first
+  - state your most important information first
   - break up large blocks of text
 
 ## Ch. 04 Editing documentation
 
+- technical accuracy
+  - e.g. clarify the phrases like "encryption" and "hashing"
+- completeness
+  - OS, software version
+  - note any limitations clearly
+- structure
+  - clear state any prerequiste steps
+    - you must be an admin to complete these steps
+    - this document assumes you have finished configuring your API
+- clarity and brevity
+- only criticize an idea if you also add a constructive suggestion
+
 ## Ch. 05 Intergrating code samples
 
+- keep comments short and to the point
+- keep code sample lines short enough to display
+  - horizontal scroll bars are awkward
+- use descriptive strings
+  - `your_password`, `replece_with_actual_bark`
+
 ## Ch. 06 Adding visual content
+
+- [C4 Model](https://c4model.com/)
 
 ## Ch. 07 Publishing documentation
 
