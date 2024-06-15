@@ -50,12 +50,12 @@
     - Via web application
   - Fetch by key -> storage engine uses an index to find the data
     - Log-structured
-      - SSTable
-      - LSM-trees
+      - Faster for write
+      - SSTable, LSM-trees
       - (LevelDB, AWS S3, RocksDB)
     - Update-in-place (B-tree)
-      - Major RDB
-      - Many nonrelational ones
+      - Faster for read
+      - Major RDB, Many nonrelational ones
   - Bottleneck: disk seek time
 - OLAP (optimized for analytics processing)
   - Handle lower volume of queries but huge records
@@ -66,8 +66,9 @@
     - Visualization -> Decision support
     - Prepare data for data-driven features (recommendation)
   - columns-oriented storage is a popular solution
+    - don't store all the values from one row together, but store all the values from each cloumns together instead
     - Also applied to nonrelational data (ex. Parquet)
-    - Columns compression
+    - Columns compression: bitmap encoding
   - Star and Snowflakes: schemas for analytics
     - Denormalization
       - Relational -> Star schema (or snowflakes) -> unnormalize
@@ -78,6 +79,8 @@
         - Over 100 columns
       - Dimension tables
         - Represent the who, what, where, when, how, and why of the event
+    - Snowflake schema
+      - breake down dimensions to subdimensions
   - Bottleneck: disk bandwidth
 
 ## Part 3. Derived Data
