@@ -1,0 +1,58 @@
+# Becoming SRE
+
+## Introduction to SRE
+
+### Ch1: First Things First
+
+- DeveOps: laptop to production
+- SRE: create a reliable production environment
+- The same tools might be used
+
+### Ch2: SRE Mindset
+
+- How does a system work?
+  - How will the system work if we scale it?
+  - How can the system work with less operational load?
+  - How can the system work reliably for more people?
+    - For people who create things that go to production: o11y, better monitoring, better alerting, better logging, better release tools, easy-to-use documentation
+    - For people who consume things from production: CDN setup, degrade gracefully, accessibility testing tools
+- How does it fail?
+  - How does the system fail when the service/product succeeds?
+  - When will it cease to work as needed?
+    - thinking about how to replace it
+
+### Ch3: SRE Culture
+
+- Culture as a Vehicle or a Lever
+  - decide where you want to go
+- Building culture: give yourself the leeway to not only break things into relatively small parts but also to focus on the processes that bring them together
+  - self-service, well-documented, extensible, instrumented, accessibility
+- Focus intently and intentionally on your incident handling and review.
+  - post-incident reviews are currently yielding new and useful information about your systems and how they can fail
+  - Not only SRE at this point, but also the entire organization
+- Nurture SRE culture
+  - "book club" idea. 3 questions.
+    - What is missing from the write-up we have here?
+    - What do we still not know, or what may we never know?
+    - Why wasn't this worse? (for outages)
+  - Rotations
+    - To the development team
+
+## Becoming SRE for the Individual
+
+### Ch5: Preparing to become an SRE
+
+- Know how to code
+  - If you don't know how something is built, your ability to understand how it can fail is limited
+  - Learning to code will help teach you how to debug or troubleshoot
+- Single/Basic systems and how they fail, Distributed systems and how they fail
+  - active/passive or primary/secondary configurations, latency, consensus algorithms, distributed timekeeping, and data consistency
+- Storytelling
+  - A post-incident review/postmortem is a story
+- Performance engineering and Chaos engineering
+- ML and AI
+  - Reliable Machine Learning
+
+### Ch6: Hints for getting hired as an SRE
+
+## Becoming SRE for the Organization
