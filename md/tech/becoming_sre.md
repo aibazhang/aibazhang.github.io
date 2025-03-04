@@ -53,6 +53,46 @@
 - ML and AI
   - Reliable Machine Learning
 
-### Ch6: Hints for getting hired as an SRE
+### Ch7: Hints for getting hired as an SRE
 
-## Becoming SRE for the Organization
+#### Preparing for an SRE Interview
+
+- NALSD (non-abstract large system design)
+- Monitoring/observability
+  - Practical Monitoring
+  - Observability Engineering
+  - OSS monitoring tool: Prometheus
+- Computing Fundamentals
+  - OS: Linux and the Linux kernel works at the operating system level
+  - Networks: OSI model, playing with real networking protocols in a home lab
+- Troubleshooting/debugging
+
+### Ch8: A Day in the Life of an SRE
+
+- Incident/Outage Mode
+- Postincident Learning Mode
+- Builder/Project/Learn Mode
+  - Coding a custom application to perform Self-service interface
+  - Provision: IaC
+  - Improve monitoring/o11y/alerting
+  - Writing docs
+  - Learning a new technology
+- Architecture Mode
+  - Bring the expertise and experience to bear at the planning stages of a project
+- Management Mode
+- Planning Mode
+- Collaboration Mode
+  - SLI/SLO definition
+  - Prelaunch review
+- Recovery and Self-Care Mode
+
+### Ch9: Establishing a Relationship to Toil
+
+- Automation is not the silver bullet
+  - It doesn't handle a particular use case
+  - Too onerous to configure
+- Transform toil into Complexity
+- Single system -> 
+  - Do I allocate my finite capacity to address past toil (established), current toil (early), or future toil?
+
+### Ch10: Learning from Failure
