@@ -96,3 +96,42 @@
   - Do I allocate my finite capacity to address past toil (established), current toil (early), or future toil?
 
 ### Ch10: Learning from Failure
+
+- Nontrivial incidents just didn't work that way -> The five whys
+- post-incident review
+  - As soon as possible the incident is resolved 0-2 days
+  - After a significant incident, kick off a post-incident
+  - Create a shared chronology in a document
+    - What decisions were made
+    - What information the people involved
+    - Who was involved and who was not
+    - What the resources were consulted
+- Common Traps
+  - Attribution of the issue to "human error"
+    - -> identifying the personal, systemic, or organizational context
+  - Counterfactual reasoning
+    - -> Focus on what happened
+  - Judge the situation and people for something they didn't do or have
+  - Ignoring the positive
+- Resilience Engineering
+- Chaos Engineering
+
+
+## Becoming SRE for the Organization
+
+### Ch11: Organizational Factors for Success
+
+- Contributing Factor 1: What’s the Problem?
+  - Problem statement, not a feature statement
+  - "We are spending too much time dealing with outages running the system (i.e., on toil)"
+- Contributing Factor 2: What Is the Org Willing to Do to Get There?
+  - "reliability important" is obvious
+  - Ask questions about "What Is the Org Willing to Do to Get There?"
+- Contributing Factor 3: Does the Org Have the Requisite Patience?
+  - Cumulative: Actual reliability dose not really happen util the capability is built up
+  - Be sure to communicate your incremental successes as it happens
+- Contributing Factor 4: Can We Collaborate?
+- Contributing Factor 5: Does the Org Make Decisions Based on Data?
+- Contributing Factor 6: Can the Org Learn and Act on What It Learns?
+
+### Ch12: How SRE Can Fail
