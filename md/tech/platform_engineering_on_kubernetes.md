@@ -18,24 +18,27 @@
   - The higher the category, the more you will need to pay
     - these services usually take care of all the underlying layers and operational costs for you.
   - Cloud platforms (e.g Google Cloud)
-    - Service APIs
-      - Scripts
-      - SDKs (python, java, go)
-      - CLIs (gcloud)
-    - Dashboard (UI)
+    - Service APIs (Google Cloud APIs)
+    - SDKs (python, java, go)
+    - CLIs (gcloud)
+    - Dashboard (Console)
   - Kubernetes
     - Service APIs (Kubernetes APIs)
+    - SDKs (client-go)
     - CLI (kubectl)
     - Dashboard (Kubernetes Dashboard, k9s)
-    - k8s is not a platform, but a meta-platform or a platform to build platforms.
+    - A platform to build platforms
       - provides all the building blocks you need to build concrete platforms that will solve dominion-specific challenges.
   - A good platform
-    - An internal product and your dev tema are your customers
+    - An internal product and your dev team are your customers
     - consistent user experiences for using
     - managing its capabilities and services
       - web portals
       - project templates
       - self-service APIs
+    - The relationship between the platform team and the dev team
+      - Platform team: focus on internal development teams' satisfaction while using the platform's tools
+      - The synergy between the platform team and the dev team would improve the entire organization's software delivery practices
   - It's hard to buy a platform
     - To solve specific problems: need to figure out services and tools fit your needs
 
@@ -68,6 +71,16 @@
 ## 5. Multi-cloud (app) infrastructure
 
 ## 6. Let's build a platform on top of Kubernetes
+
+- The platform engineering understand what dev teams need
+  - what they will work on
+  - what tools they need
+  - which other services must be integrated
+- -> define an API to provision new development environments (or other services)
+  - encode what a development environment means for our teams
+  - provision and configure components and tools
+  - enable teams to the newly provisioned environments
+- Document your journey with each of the tools as part of your platform initiatives
 
 ## 7. Platform capabilities I: Shared application concerns
 
