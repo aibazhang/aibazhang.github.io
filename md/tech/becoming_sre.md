@@ -135,3 +135,50 @@
 - Contributing Factor 6: Can the Org Learn and Act on What It Learns?
 
 ### Ch12: How SRE Can Fail
+
+- Contributing Factor 1: Title Flipping to Create SREs
+- 2: Converting Tier 3 Support to SRE
+  - Tier 3 (L3): Advanced support, custom fixes, identifying product defects.
+- 3: On Call and That's All
+- 4: Wrong Org Chart
+  - More people involved -> more hops -> harder decisions can be
+- 5: SRE by Rote
+  - Attemping to replicate everything in the Google SRE book is not possible
+- 6: Gatekeeping
+  - people will "route around damage"
+- 7: Death Through Success
+- 8: A Collection of Smaller Factors
+  - I'm here to save the kingdom
+  - Lack of intreospection, balance (reactive vs. project work), a culture of curiosity...
+  - Forgetting the customer
+  - Forgetting to have fun
+
+## Ch13: SRE from a Business Perspective
+
+- Communicating about SRE
+  - Reliability is a feature
+  - SREs are feature devs focused on the feature of reliability
+  - Metrics
+    - e.g. put 5 SREs there and the sercie gets a thousand times bigger and doesn't fall over
+  - Don't try to justify your own existence, figure out a path where they don't have to keep doing the job for that service 
+- Budgeting for SRE
+  - Reliability work should never be viewed as a tax on development works. It's a kind of feature work
+  - Not fall into the "SRE is going to make all of your problems go away" trap of selling these promises
+  - Say "You done stuff in a way that isn't gonna grow or isn't gonna scale longitudinally
+
+## Ch14: The Dickerson Hierarchy of Reliability (A Good Place to Start)
+
+- Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure
+- Wrong turns
+  - "SRE would eb a cheaper way of handling on-call so their engineers could work on more import things"
+  - All of your time has been spent working on postincident reviews
+  - SREs are considered just "engineer" and therefore fungible or convertible to generic SWEs
+  - Convert existing SRE headcount to just "engineer" headcount
+
+## Ch15: Fitting SRE into Your Organization
+
+- Pre-role practives: even pilot or proof-of-concept SRE work can be beneficial
+- Integration models
+  - Centrailized/Partnered Model
+  - Distributed/Embedded Model
+
