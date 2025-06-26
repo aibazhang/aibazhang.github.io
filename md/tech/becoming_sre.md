@@ -182,3 +182,6 @@
   - Centrailized/Partnered Model
   - Distributed/Embedded Model
 
+## Ch16: Growing SRE in Your Organization
+
+- SREs must be agents of convergence and connection—not agents of conformity, deindividualization, or removing distinction.
