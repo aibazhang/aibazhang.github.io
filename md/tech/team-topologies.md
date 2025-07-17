@@ -59,13 +59,39 @@
 - Platform Team
   - Streanm-aligned TeamがPlatform Teamの顧客
   - 冗長な利用マニュアルではなく、セルフサービスでweb UIやprogrammatic APIを提供する
-  - Paltform Teamの価値はproduct teamに提供しているサービスの価値で測られる
+  - Platform Teamの価値はproduct teamに提供しているサービスの価値で測られる
+  - PlatformはInfrastructureやNetworkなど下位の機能を横断的に抽象化していることが多い
   - 境界には大きな幅がある
     - 厚いPlatform: 複数のPlatformが無数のサービスを提供している
-    - 薄いPlatform: 単にベンダー＝のソリューションに皮を被せただけの場合もある
+    - 薄いPlatform: 単にベンダーのソリューションに皮を被せただけの場合もある
   - Platformの中でも、ネットワーク担当、環境担当、メトリクス担当がいる
   - applicationやserviceのニーズに応えるのが重要で、逆にしてはいけない
-  - どんな場合でもで、最低限のPlatform(TVP)を目指すべき。Platformが制約になるのは避けなければならない
+  - どんな場合でも、最低限のPlatform(TVP)を目指すべき。Platformが制約になるのは避けなければならない
   - 新しい開発者がplatformを使い始めるのがどれだけ簡単かどうかはDevExの達成状況についての良い指標
-  - 開発チームが欲しい機能の単なる集合はPlatformではない
+  - 開発チームが欲しい機能の単なる集合はPlatformではない。業界の技術動向と組織のニーズを踏まえ、一貫性保ちながら開発されたもの
 - Stream-aligned Team : Other Teams = 6:1 ~ 9:1
+
+## Ch6 チームファーストな境界を決める
+
+- 目指すべきは「チーム間のコミュニケーションをさほど要さず、設計からデプロイまでの作業を完遂できる能力」を促進するアーキテクチャ
+- 規制の対象となるモノリスをサブシステムに分割したり、フローを分離したりすべき
+- モノリスを分割する前に、チームのことを考慮する
+  - しないと、間違った形で分割する
+  - 複雑なシステムを作り出すリスクがある
+- モノリスの種類
+  - Application Monolith
+  - Database Monolith
+  - Monolithic Build
+  - Monolithic Release
+  - Monolithic Model: 単一のドメイン言語と表現を強制的に適用しようとする
+  - Monolithic Thinking: チームに標準化を強制することで学習や実験が減り、貧弱なソリューションの選択に繋がる
+  - Monolithic Workspace
+- ソフトウェアの境界
+  - ビジネスドメインのコンテキスト境界: ビジネスドメインによる境界とビジネスの足並みを揃える
+  - 規制遵守: 規制の対象となるモノリスをサブシステムに分割したり、フローを分離したりする
+  - 変更の頻度
+  - チームの地理的配置
+  - リスク: システムが落ちた時の影響範囲（例えばユーザ数）
+  - パフォーマンス: ピークが来そうなシステムだけ切り出すことで、スケーリングがしやすくなる
+  - 技術: IDE, build tools, CI/CD
+  - ユーザペルソナ: 
