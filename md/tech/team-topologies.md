@@ -57,7 +57,7 @@
   - 適切なツール、プラクティス、フレームワークなどのエコシステムに関する調査
   - 能力獲得と進化を自分でやる場合、10~15倍の労力がかかる
 - Platform Team
-  - Streanm-aligned TeamがPlatform Teamの顧客
+  - Stream-aligned TeamがPlatform Teamの顧客
   - 冗長な利用マニュアルではなく、セルフサービスでweb UIやprogrammatic APIを提供する
   - Platform Teamの価値はproduct teamに提供しているサービスの価値で測られる
   - PlatformはInfrastructureやNetworkなど下位の機能を横断的に抽象化していることが多い
@@ -95,3 +95,33 @@
   - パフォーマンス: ピークが来そうなシステムだけ切り出すことで、スケーリングがしやすくなる
   - 技術: IDE, build tools, CI/CD
   - ユーザペルソナ: 
+
+## Ch7 Team Interaction Modes
+
+- ビジネス、組織、マーケット、技術、個人のニーズを満たすために、チームのパターンを進化させる
+- Collaboration: 他のチームと密接に協力して作業すること
+  - 素早く探索する必要がある段階では、価値が非常に高くなる
+  - 継続的にCollaborationが必要になる場合、ドメインの境界やチームの責任が正しくない
+  - ふるまい：豊富なインタラクションと相互の尊重
+- X-as-a-Service: 最小限のCollaborationで何かを利用または提供すること
+  - うまく機能するため、サービス境界が明確で、サービス管理が優れている
+  - UXを重視する
+- Facilitation: 障害を取り除くために他のチームを支援したり、支援を受けたりすること
+  - ふるまい：助け合う
+- interfaceが安定し機能することが変わるまでcollaborationを続ける
+
+## Ch8 組織的センシングでチーム構造を進化させる
+
+
+## Ch9 The Next-Generation Digital Operating Model
+
+- 組織の問題：「機能開発」にとらわれるあまり、モダンなソフトウェアに必須な人間関係、チーム関係の力学をを無視している
+- チームは外部向けの「API」となるのはコードだけではない
+  - document, on-boarding, communication, chatなど他のチームと対話するのに必要なものは、何でも「API」
+- チームトポロジーは静的なものではなく、状況に合わせて変えていくもの
+- 技術はPlatformの一部分にすぎない
+  - Roadmap
+  - 進化の方向性
+  - 明確なドキュメント
+  - DevExの考慮
+  - 内在する複雑性の適切なカプセル化
