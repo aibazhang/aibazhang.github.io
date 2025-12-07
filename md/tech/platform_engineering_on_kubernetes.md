@@ -80,9 +80,32 @@
   - encode what a development environment means for our teams
   - provision and configure components and tools
   - enable teams to the newly provisioned environments
+- Not a black-box approach
+  - Temas have the technical experience to interact with the underlying layers and tools -> they should be able to do so
 - Document your journey with each of the tools as part of your platform initiatives
+- Platform tools and worklaods need to be separated
+- How much you lean on the k8s APIs is a decision that platform engineering teams will need to make
+- Start with simple solution such ns isolation -> single cluster with tons of ns -> a more robust plan
+- Implementation scenarios
+  - Purchase a solution (but limited platform engineering customization or operability)
+  - Build
+    - Scripting languages (BASH, Python)
+    - Declarative infra languages (Terraform, Crossplane)
+    - Workflow engines (Argo Workflows, GitHub Actions)
 
 ## 7. Platform capabilities I: Shared application concerns
+
+- Most apps doing 95% of the time
+  - Call other services to send or receive infromation
+  - Store and read data from persistent storage
+  - Emit and consume events or messages async
+  - Accessing credentials to connect to services
+- Increase velocity in software delivery pipelines
+  - go one level down to understand the intricate relationships between the components of our platform
+- Decouple responsibilities from app dev teams and platform capabilities
+  - Platform team: Statestore API, PubSub API, Credential Store API, Resiliency Policies
+  - If you move toward platform-provided capabilities, you must ensure that you can provide a local dev experience for dev teams
+  - Good platforms will promote APIs that cover a wide range of use cases
 
 ## 8. Platform capabilities II: Enabling teams to experiment
 
